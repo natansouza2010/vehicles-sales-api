@@ -17,6 +17,8 @@ public class Vehicle {
     private String id;
     private String name;
     private String brand;
+    private String model;
+    private Double value;
     private String urlPhoto;
 
 
