@@ -54,6 +54,9 @@ public class VehicleController {
             ve.get().setName(vehicle.getName());
             ve.get().setBrand(vehicle.getBrand());
             ve.get().setUrlPhoto(vehicle.getUrlPhoto());
+            ve.get().setModel(vehicle.getModel());
+            ve.get().setValue(vehicle.getValue());
+
             return new ResponseEntity<>(vehicleService.save(ve.get()), HttpStatus.OK);
         }else{
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
